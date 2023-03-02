@@ -1,0 +1,61 @@
+package com.ingsistemas.mallacurricular.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import java.io.Serializable;
+
+/**
+ * The primary key class for the competencia_resultado database table.
+ */
+@Embeddable
+public class CompetenciaResultadoPK implements Serializable {
+    //default serial version id, required for serializable classes.
+    private static final long serialVersionUID = 1L;
+
+    @Column(name = "id_competencia")
+    private String idCompetencia;
+
+    @Column(name = "id_resultado")
+    private String idResultado;
+
+    public CompetenciaResultadoPK() {
+    }
+
+    public String getIdCompetencia() {
+        return this.idCompetencia;
+    }
+
+    public void setIdCompetencia(String idCompetencia) {
+        this.idCompetencia = idCompetencia;
+    }
+
+    public String getIdResultado() {
+        return this.idResultado;
+    }
+
+    public void setIdResultado(String idResultado) {
+        this.idResultado = idResultado;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof CompetenciaResultadoPK)) {
+            return false;
+        }
+        CompetenciaResultadoPK castOther = (CompetenciaResultadoPK) other;
+        return
+                this.idCompetencia.equals(castOther.idCompetencia)
+                        && this.idResultado.equals(castOther.idResultado);
+    }
+
+    public int hashCode() {
+        final int prime = 31;
+        int hash = 17;
+        hash = hash * prime + this.idCompetencia.hashCode();
+        hash = hash * prime + this.idResultado.hashCode();
+
+        return hash;
+    }
+}
