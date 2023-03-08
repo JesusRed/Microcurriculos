@@ -18,21 +18,44 @@ public class CompetenciaResultadoPK implements Serializable {
     @Column(name = "id_resultado")
     private String idResultado;
 
+    /**
+     * Instantiates a new Competencia resultado pk.
+     */
     public CompetenciaResultadoPK() {
     }
 
+    /**
+     * Gets id competencia.
+     *
+     * @return the id competencia
+     */
     public String getIdCompetencia() {
         return this.idCompetencia;
     }
 
+    /**
+     * Sets id competencia.
+     *
+     * @param idCompetencia the id competencia
+     */
     public void setIdCompetencia(String idCompetencia) {
         this.idCompetencia = idCompetencia;
     }
 
+    /**
+     * Gets id resultado.
+     *
+     * @return the id resultado
+     */
     public String getIdResultado() {
         return this.idResultado;
     }
 
+    /**
+     * Sets id resultado.
+     *
+     * @param idResultado the id resultado
+     */
     public void setIdResultado(String idResultado) {
         this.idResultado = idResultado;
     }
@@ -45,9 +68,7 @@ public class CompetenciaResultadoPK implements Serializable {
             return false;
         }
         CompetenciaResultadoPK castOther = (CompetenciaResultadoPK) other;
-        return
-                this.idCompetencia.equals(castOther.idCompetencia)
-                        && this.idResultado.equals(castOther.idResultado);
+        return this.idCompetencia.equals(castOther.idCompetencia) && this.idResultado.equals(castOther.idResultado);
     }
 
     public int hashCode() {

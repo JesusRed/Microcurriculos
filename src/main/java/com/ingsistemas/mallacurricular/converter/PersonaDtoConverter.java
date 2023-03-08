@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Persona dto converter.
+ */
 @Component
 public class PersonaDtoConverter implements ConverterDto<Persona, PersonaDto> {
 

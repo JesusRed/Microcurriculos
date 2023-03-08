@@ -11,6 +11,9 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * The type Programa academico dao.
+ */
 @Repository
 public class ProgramaAcademicoDaoImpl extends GenericDaoImpl<ProgramaAcademico, UUID> implements ProgramaAcademicoDao {
 

@@ -8,11 +8,20 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Asignatura converter.
+ */
 @Component
 public class AsignaturaConverter implements ConverterDto<Asignatura, AsignaturaDto> {
 
+    /**
+     * The Area converter.
+     */
     @Autowired
     AreaFormacionConverter areaConverter;
+    /**
+     * The Pre converter.
+     */
     @Autowired
     PreRequisitoConverter preConverter;
 
@@ -49,6 +58,12 @@ public class AsignaturaConverter implements ConverterDto<Asignatura, AsignaturaD
         return a;
     }
 
+    /**
+     * Convert asignatura.
+     *
+     * @param dto the dto
+     * @return the asignatura
+     */
     public Asignatura convert(AsignaturaDto dto) {
         Asignatura a = new Asignatura();
         a.setAccFormacionInv(dto.getAccFormacionInv());

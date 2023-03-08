@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Pre requisito converter.
+ */
 @Component
 public class PreRequisitoConverter implements ConverterDto<PreRequisito, PreRequisitoDto> {
 

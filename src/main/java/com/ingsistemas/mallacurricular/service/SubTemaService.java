@@ -5,6 +5,9 @@ import com.ingsistemas.mallacurricular.filters.SubTemaFilter;
 
 import java.util.UUID;
 
+/**
+ * The interface Sub tema service.
+ */
 public interface SubTemaService extends GenericService<SubtemaDto, UUID, SubTemaFilter> {
 
 }

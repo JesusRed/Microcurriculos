@@ -22,21 +22,44 @@ public class Rol implements Serializable {
     @Column(name = "rol_nombre")
     private String rolNombre;
 
+    /**
+     * Instantiates a new Rol.
+     */
     public Rol() {
     }
 
+    /**
+     * Gets id rol.
+     *
+     * @return the id rol
+     */
     public Integer getIdRol() {
         return this.idRol;
     }
 
+    /**
+     * Sets id rol.
+     *
+     * @param idRol the id rol
+     */
     public void setIdRol(Integer idRol) {
         this.idRol = idRol;
     }
 
+    /**
+     * Gets rol nombre.
+     *
+     * @return the rol nombre
+     */
     public String getRolNombre() {
         return this.rolNombre;
     }
 
+    /**
+     * Sets rol nombre.
+     *
+     * @param rolNombre the rol nombre
+     */
     public void setRolNombre(String rolNombre) {
         this.rolNombre = rolNombre;
     }

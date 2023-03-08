@@ -27,29 +27,62 @@ public class PreRequisito implements Serializable {
 
     private String credito;
 
+    /**
+     * Instantiates a new Pre requisito.
+     */
     public PreRequisito() {
     }
 
+    /**
+     * Gets id pre requisito.
+     *
+     * @return the id pre requisito
+     */
     public UUID getIdPreRequisito() {
         return this.idPreRequisito;
     }
 
+    /**
+     * Sets id pre requisito.
+     *
+     * @param idPreRequisito the id pre requisito
+     */
     public void setIdPreRequisito(UUID idPreRequisito) {
         this.idPreRequisito = idPreRequisito;
     }
 
+    /**
+     * Gets credito.
+     *
+     * @return the credito
+     */
     public String getCredito() {
         return this.credito;
     }
 
+    /**
+     * Sets credito.
+     *
+     * @param credito the credito
+     */
     public void setCredito(String credito) {
         this.credito = credito;
     }
 
+    /**
+     * Gets asignatura.
+     *
+     * @return the asignatura
+     */
     public Integer getAsignatura() {
         return asignatura;
     }
 
+    /**
+     * Sets asignatura.
+     *
+     * @param asignatura the asignatura
+     */
     public void setAsignatura(Integer asignatura) {
         this.asignatura = asignatura;
     }

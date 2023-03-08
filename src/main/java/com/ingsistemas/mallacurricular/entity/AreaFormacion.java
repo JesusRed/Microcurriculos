@@ -22,21 +22,44 @@ public class AreaFormacion implements Serializable {
     @Column(name = "nombre")
     private String nombre;
 
+    /**
+     * Instantiates a new Area formacion.
+     */
     public AreaFormacion() {
     }
 
+    /**
+     * Gets id area formacion.
+     *
+     * @return the id area formacion
+     */
     public UUID getIdAreaFormacion() {
         return this.idAreaFormacion;
     }
 
+    /**
+     * Sets id area formacion.
+     *
+     * @param idAreaFormacion the id area formacion
+     */
     public void setIdAreaFormacion(UUID idAreaFormacion) {
         this.idAreaFormacion = idAreaFormacion;
     }
 
+    /**
+     * Gets nombre.
+     *
+     * @return the nombre
+     */
     public String getNombre() {
         return this.nombre;
     }
 
+    /**
+     * Sets nombre.
+     *
+     * @param nombre the nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

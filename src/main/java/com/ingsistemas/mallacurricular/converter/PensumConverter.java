@@ -8,11 +8,20 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Pensum converter.
+ */
 @Component
 public class PensumConverter implements ConverterDto<Pensum, PensumDto> {
 
+    /**
+     * The Asiconverter.
+     */
     @Autowired
     AsignaturaConverter asiconverter;
+    /**
+     * The Paconverter.
+     */
     @Autowired
     ProgramaAcademicoConverter paconverter;
 

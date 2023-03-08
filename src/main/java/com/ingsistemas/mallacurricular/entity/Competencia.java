@@ -28,29 +28,62 @@ public class Competencia implements Serializable {
 
     private String nombre;
 
+    /**
+     * Instantiates a new Competencia.
+     */
     public Competencia() {
     }
 
+    /**
+     * Gets id competencia.
+     *
+     * @return the id competencia
+     */
     public UUID getIdCompetencia() {
         return this.idCompetencia;
     }
 
+    /**
+     * Sets id competencia.
+     *
+     * @param idCompetencia the id competencia
+     */
     public void setIdCompetencia(UUID idCompetencia) {
         this.idCompetencia = idCompetencia;
     }
 
+    /**
+     * Gets descripcion.
+     *
+     * @return the descripcion
+     */
     public String getDescripcion() {
         return this.descripcion;
     }
 
+    /**
+     * Sets descripcion.
+     *
+     * @param descripcion the descripcion
+     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
+    /**
+     * Gets nombre.
+     *
+     * @return the nombre
+     */
     public String getNombre() {
         return this.nombre;
     }
 
+    /**
+     * Sets nombre.
+     *
+     * @param nombre the nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

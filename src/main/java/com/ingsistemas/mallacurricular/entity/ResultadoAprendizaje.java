@@ -25,29 +25,62 @@ public class ResultadoAprendizaje implements Serializable {
 
     private String nombre;
 
+    /**
+     * Instantiates a new Resultado aprendizaje.
+     */
     public ResultadoAprendizaje() {
     }
 
+    /**
+     * Gets id resultado.
+     *
+     * @return the id resultado
+     */
     public UUID getIdResultado() {
         return this.idResultado;
     }
 
+    /**
+     * Sets id resultado.
+     *
+     * @param idResultado the id resultado
+     */
     public void setIdResultado(UUID idResultado) {
         this.idResultado = idResultado;
     }
 
+    /**
+     * Gets descripcion.
+     *
+     * @return the descripcion
+     */
     public String getDescripcion() {
         return this.descripcion;
     }
 
+    /**
+     * Sets descripcion.
+     *
+     * @param descripcion the descripcion
+     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
+    /**
+     * Gets nombre.
+     *
+     * @return the nombre
+     */
     public String getNombre() {
         return this.nombre;
     }
 
+    /**
+     * Sets nombre.
+     *
+     * @param nombre the nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

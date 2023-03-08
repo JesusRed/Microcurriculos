@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+/**
+ * The interface Unidad repository.
+ */
 @Repository
 public interface UnidadRepository extends JpaRepository<Unidad, UUID> {
 

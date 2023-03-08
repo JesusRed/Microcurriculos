@@ -6,10 +6,16 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
+/**
+ * The type Security configuration.
+ */
 @SuppressWarnings("deprecation")
 @EnableWebSecurity
 
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+    /**
+     * The Seguridad activada.
+     */
     @Value("${seguridadActivada}")
     boolean seguridadActivada;
 

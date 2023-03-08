@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Area formacion converter.
+ */
 @Component
 public class AreaFormacionConverter implements ConverterDto<AreaFormacion, AreaFormacionDto> {
 

@@ -3,6 +3,9 @@ package com.ingsistemas.mallacurricular.converter;
 import javax.persistence.AttributeConverter;
 import java.util.UUID;
 
+/**
+ * The type Uuid converter.
+ */
 public class UUIDConverter implements AttributeConverter<UUID, String> {
     @Override
     public String convertToDatabaseColumn(UUID attribute) {

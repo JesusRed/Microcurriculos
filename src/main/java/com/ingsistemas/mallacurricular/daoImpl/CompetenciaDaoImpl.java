@@ -6,6 +6,9 @@ import com.ingsistemas.mallacurricular.filters.MasterFilter;
 
 import java.util.List;
 
+/**
+ * The type Competencia dao.
+ */
 public class CompetenciaDaoImpl implements CompetenciaDao {
 
 

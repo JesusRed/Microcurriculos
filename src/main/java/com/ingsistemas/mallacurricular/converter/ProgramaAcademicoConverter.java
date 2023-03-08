@@ -7,10 +7,19 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Programa academico converter.
+ */
 @Component
 public class ProgramaAcademicoConverter {
 
 
+    /**
+     * Convert programa academico dto.
+     *
+     * @param entidad the entidad
+     * @return the programa academico dto
+     */
     public ProgramaAcademicoDto convert(ProgramaAcademico entidad) {
         ProgramaAcademicoDto dto = new ProgramaAcademicoDto();
         dto.setDirectorId(entidad.getPersona().getCodigo());
@@ -20,6 +29,12 @@ public class ProgramaAcademicoConverter {
         return dto;
     }
 
+    /**
+     * Convert list.
+     *
+     * @param lista the lista
+     * @return the list
+     */
     public List<ProgramaAcademicoDto> convert(List<ProgramaAcademico> lista) {
         List<ProgramaAcademicoDto> list = new ArrayList();
         for (ProgramaAcademico dto : lista) {

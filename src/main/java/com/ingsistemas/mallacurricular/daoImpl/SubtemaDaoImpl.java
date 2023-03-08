@@ -6,6 +6,9 @@ import com.ingsistemas.mallacurricular.filters.MasterFilter;
 
 import java.util.List;
 
+/**
+ * The type Subtema dao.
+ */
 public class SubtemaDaoImpl implements SubtemaDao {
 
 

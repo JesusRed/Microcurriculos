@@ -13,6 +13,9 @@ import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 
 
+/**
+ * The type Persona dao.
+ */
 @Repository
 public class PersonaDaoImpl implements PersonaDao {
     @PersistenceContext

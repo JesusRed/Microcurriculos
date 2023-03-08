@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+/**
+ * The interface Sub tema repository.
+ */
 @Repository
 public interface SubTemaRepository extends JpaRepository<Subtema, UUID> {
 

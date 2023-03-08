@@ -5,6 +5,9 @@ import com.ingsistemas.mallacurricular.filters.PreRequisitoFilter;
 
 import java.util.UUID;
 
+/**
+ * The interface Pre requisito service.
+ */
 public interface PreRequisitoService extends GenericService<PreRequisitoDto, UUID, PreRequisitoFilter> {
 
 }

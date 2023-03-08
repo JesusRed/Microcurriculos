@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Competencia converter.
+ */
 @Component
 public class CompetenciaConverter implements ConverterDto<Competencia, CompetenciaDto> {
 

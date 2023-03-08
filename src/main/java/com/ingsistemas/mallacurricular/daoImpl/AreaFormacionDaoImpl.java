@@ -12,6 +12,9 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * The type Area formacion dao.
+ */
 @Repository
 public class AreaFormacionDaoImpl extends GenericDaoImpl<AreaFormacion, UUID> implements AreaFormacionDao {
 

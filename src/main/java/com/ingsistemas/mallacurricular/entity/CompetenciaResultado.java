@@ -19,13 +19,26 @@ public class CompetenciaResultado implements Serializable {
     @EmbeddedId
     private CompetenciaResultadoPK id;
 
+    /**
+     * Instantiates a new Competencia resultado.
+     */
     public CompetenciaResultado() {
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public CompetenciaResultadoPK getId() {
         return this.id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(CompetenciaResultadoPK id) {
         this.id = id;
     }

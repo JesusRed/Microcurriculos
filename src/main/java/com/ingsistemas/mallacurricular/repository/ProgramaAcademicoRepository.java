@@ -7,6 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+/**
+ * The interface Programa academico repository.
+ */
 @Repository
 public interface ProgramaAcademicoRepository extends JpaRepository<ProgramaAcademico, UUID>, ProgramaAcademicoDao {
 

@@ -7,9 +7,15 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Sub tema converter.
+ */
 @Component
 public class SubTemaConverter implements ConverterDto<Subtema, SubtemaDto> {
 
+    /**
+     * The Converter tema.
+     */
     TemaConverter converterTema;
 
     @Override

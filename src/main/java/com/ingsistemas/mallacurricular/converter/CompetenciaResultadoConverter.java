@@ -8,10 +8,19 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Competencia resultado converter.
+ */
 @Component
 public class CompetenciaResultadoConverter implements ConverterDto<CompetenciaResultado, CompetenciaResultadoDto> {
+    /**
+     * The Compconverter.
+     */
     @Autowired
     CompetenciaConverter compconverter;
+    /**
+     * The Resconverter.
+     */
     @Autowired
     ResultadoAprendizajeConverter resconverter;
 

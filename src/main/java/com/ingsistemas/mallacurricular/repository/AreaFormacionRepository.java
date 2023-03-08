@@ -7,6 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+/**
+ * The interface Area formacion repository.
+ */
 @Repository
 public interface AreaFormacionRepository extends JpaRepository<AreaFormacion, UUID>, AreaFormacionDao {
 

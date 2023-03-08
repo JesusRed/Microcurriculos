@@ -25,21 +25,44 @@ public class UnidadResultadoPK implements Serializable {
 
     private UUID idResultado;
 
+    /**
+     * Instantiates a new Unidad resultado pk.
+     */
     public UnidadResultadoPK() {
     }
 
+    /**
+     * Gets id unidad.
+     *
+     * @return the id unidad
+     */
     public UUID getIdUnidad() {
         return this.idUnidad;
     }
 
+    /**
+     * Sets id unidad.
+     *
+     * @param idUnidad the id unidad
+     */
     public void setIdUnidad(UUID idUnidad) {
         this.idUnidad = idUnidad;
     }
 
+    /**
+     * Gets id resultado.
+     *
+     * @return the id resultado
+     */
     public UUID getIdResultado() {
         return this.idResultado;
     }
 
+    /**
+     * Sets id resultado.
+     *
+     * @param idResultado the id resultado
+     */
     public void setIdResultado(UUID idResultado) {
         this.idResultado = idResultado;
     }
@@ -52,9 +75,7 @@ public class UnidadResultadoPK implements Serializable {
             return false;
         }
         UnidadResultadoPK castOther = (UnidadResultadoPK) other;
-        return
-                this.idUnidad.equals(castOther.idUnidad)
-                        && this.idResultado.equals(castOther.idResultado);
+        return this.idUnidad.equals(castOther.idUnidad) && this.idResultado.equals(castOther.idResultado);
     }
 
     public int hashCode() {

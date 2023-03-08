@@ -14,6 +14,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * The type Pensum dao.
+ */
 @Repository
 public class PensumDaoImpl extends GenericDaoImpl<Pensum, UUID> implements PensumDao {
 

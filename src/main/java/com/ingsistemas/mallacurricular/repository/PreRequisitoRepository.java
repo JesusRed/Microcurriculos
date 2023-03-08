@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+/**
+ * The interface Pre requisito repository.
+ */
 @Repository
 public interface PreRequisitoRepository extends JpaRepository<PreRequisito, UUID> {
 

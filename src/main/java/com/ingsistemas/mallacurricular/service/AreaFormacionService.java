@@ -6,6 +6,9 @@ import com.ingsistemas.mallacurricular.filters.AreaFormacionFilter;
 import java.util.UUID;
 
 
+/**
+ * The interface Area formacion service.
+ */
 public interface AreaFormacionService extends GenericService<AreaFormacionDto, UUID, AreaFormacionFilter> {
 
 }

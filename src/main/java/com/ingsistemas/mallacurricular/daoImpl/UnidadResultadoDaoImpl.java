@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * The type Unidad resultado dao.
+ */
 @Component
 public class UnidadResultadoDaoImpl implements UnidadResultadoDao {
 

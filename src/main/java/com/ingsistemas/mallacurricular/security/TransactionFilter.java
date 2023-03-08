@@ -19,22 +19,28 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * The type Transaction filter.
+ */
 @Component
 @Order(1)
 public class TransactionFilter implements Filter {
 
+    /**
+     * The Usuario repo.
+     */
     @Autowired
     PersonaRepository usuarioRepo;
+    /**
+     * The Seguridad activada.
+     */
     @Value("${seguridadActivada}")
     boolean seguridadActivada;
 
     @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         if (seguridadActivada) {
-            @SuppressWarnings("unchecked")
-            Collection<SimpleGrantedAuthority> oldAuthorities = (Collection<SimpleGrantedAuthority>) SecurityContextHolder
-                    .getContext().getAuthentication().getAuthorities();
+            @SuppressWarnings("unchecked") Collection<SimpleGrantedAuthority> oldAuthorities = (Collection<SimpleGrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
 
             // HttpServletRequest req = (HttpServletRequest) request;
             Authentication a = SecurityContextHolder.getContext().getAuthentication();
@@ -48,8 +54,7 @@ public class TransactionFilter implements Filter {
 
                     Persona usuario = usuarioRepo.findByCorreo(correo);
                     if (usuario == null) {
-                        ((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN,
-                                "no existe usuario registrado con este correo");
+                        ((HttpServletResponse) response).sendError(HttpServletResponse.SC_FORBIDDEN, "no existe usuario registrado con este correo");
                     } else {
                         Persona user = usuario;
                         if (user.isAdministrador()) {
@@ -78,10 +83,7 @@ public class TransactionFilter implements Filter {
         updatedAuthorities.add(authority);
         updatedAuthorities.addAll(oldAuthorities);
 
-        SecurityContextHolder.getContext()
-                .setAuthentication(new UsernamePasswordAuthenticationToken(
-                        SecurityContextHolder.getContext().getAuthentication().getPrincipal(),
-                        SecurityContextHolder.getContext().getAuthentication().getCredentials(), updatedAuthorities));
+        SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(SecurityContextHolder.getContext().getAuthentication().getPrincipal(), SecurityContextHolder.getContext().getAuthentication().getCredentials(), updatedAuthorities));
 
     }
 

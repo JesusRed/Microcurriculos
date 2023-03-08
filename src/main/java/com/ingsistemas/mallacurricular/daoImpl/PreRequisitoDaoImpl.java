@@ -6,6 +6,9 @@ import com.ingsistemas.mallacurricular.filters.MasterFilter;
 
 import java.util.List;
 
+/**
+ * The type Pre requisito dao.
+ */
 public class PreRequisitoDaoImpl implements PreRequisitoDao {
 
 
