@@ -25,9 +25,9 @@ public class ProgramaAcademicoConverter {
         dto.setDirectorId(entidad.getPersona().getCodigo());
         dto.setIdPrograma(entidad.getIdPrograma());
         dto.setNombre(entidad.getNombre());
-        //dto.setPensums(pensumConverter.convert(entidad.getPensums()));
         return dto;
     }
+
 
     /**
      * Convert list.
@@ -42,6 +42,4 @@ public class ProgramaAcademicoConverter {
         }
         return list;
     }
-
-
 }

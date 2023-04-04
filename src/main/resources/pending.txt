@@ -1,4 +1,4 @@
-1. Documentar los metodos con JavaDocs
-2. Crear coleccion de postman
-3. Formato del properties
-4. Insertar data en la base de datos
+1. Documentar los metodos con JavaDocs (*)
+2. Crear coleccion de postman ()
+3. Formato del properties ()
+4. Insertar data en la base de datos ()

@@ -18,12 +18,24 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Pre requisito service.
+ */
 @Service
 public class PreRequisitoServiceImpl implements PreRequisitoService {
+    /**
+     * The Repo.
+     */
     @Autowired
     PreRequisitoRepository repo;
+    /**
+     * The Asirepo.
+     */
     @Autowired
     AsignaturaRepository asirepo;
+    /**
+     * The Converter.
+     */
     @Autowired
     PreRequisitoConverter converter;
 

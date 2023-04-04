@@ -17,16 +17,34 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Unidad service.
+ */
 @Service
 public class UnidadServiceImpl implements UnidadService {
+    /**
+     * The Repo.
+     */
     @Autowired
     UnidadRepository repo;
+    /**
+     * The Converter.
+     */
     @Autowired
     UnidadConverter converter;
+    /**
+     * The Asignatura service.
+     */
     @Autowired
     AsignaturaRepository asignaturaService;
+    /**
+     * The Asiconverter.
+     */
     @Autowired
     AsignaturaConverter asiconverter;
+    /**
+     * The Tema service.
+     */
     @Autowired
     TemaService temaService;
 

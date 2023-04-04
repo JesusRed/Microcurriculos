@@ -17,12 +17,24 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Sub tema service.
+ */
 @Service
 public class SubTemaServiceImpl implements SubTemaService {
+    /**
+     * The Repo.
+     */
     @Autowired
     SubTemaRepository repo;
+    /**
+     * The Repo tema.
+     */
     @Autowired
     TemaRepository repoTema;
+    /**
+     * The Converter.
+     */
     @Autowired
     SubTemaConverter converter;
 

@@ -15,11 +15,20 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Resultado aprendizaje service.
+ */
 @Service
 public class ResultadoAprendizajeServiceImpl implements ResultadoAprendizajeService {
 
+    /**
+     * The Converter.
+     */
     @Autowired
     ResultadoAprendizajeConverter converter;
+    /**
+     * The Repo.
+     */
     @Autowired
     ResultadoAprendizajeRepository repo;
 

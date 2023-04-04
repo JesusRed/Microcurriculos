@@ -32,18 +32,39 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Asignatura service.
+ */
 @Service
 public class AsignaturaServiceImpl implements AsignaturaService {
+    /**
+     * The Repo.
+     */
     @Autowired
     AsignaturaRepository repo;
+    /**
+     * The Converter.
+     */
     @Autowired
     AsignaturaConverter converter;
+    /**
+     * The Area repo.
+     */
     @Autowired
     AreaFormacionRepository areaRepo;
+    /**
+     * The Prere repo.
+     */
     @Autowired
     PreRequisitoRepository prereRepo;
+    /**
+     * The Urepo.
+     */
     @Autowired
     UnidadRepository urepo;
+    /**
+     * The Ruta jasper report.
+     */
     @Value("${asignaturaReport.path}")
     String rutaJasperReport;
 

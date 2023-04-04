@@ -12,10 +12,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The type Competencia resultado service.
+ */
 @Service
 public class CompetenciaResultadoServiceImpl implements CompetenciaResultadoService {
+    /**
+     * The Repo.
+     */
     @Autowired
     CompetenciaResultadoRepository repo;
+    /**
+     * The Converter.
+     */
     @Autowired
     CompetenciaResultadoConverter converter;
 

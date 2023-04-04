@@ -17,12 +17,24 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Tema service.
+ */
 @Service
 public class TemaServiceImpl implements TemaService {
+    /**
+     * The Repo.
+     */
     @Autowired
     TemaRepository repo;
+    /**
+     * The Unirepo.
+     */
     @Autowired
     UnidadRepository unirepo;
+    /**
+     * The Converter.
+     */
     @Autowired
     TemaConverter converter;
 

@@ -18,12 +18,24 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Programa academico service.
+ */
 @Service
 public class ProgramaAcademicoServiceImpl implements ProgramaAcademicoService {
+    /**
+     * The Converter.
+     */
     @Autowired
     ProgramaAcademicoConverter converter;
+    /**
+     * The Persona repository.
+     */
     @Autowired
     PersonaRepository personaRepository;
+    /**
+     * The Repo.
+     */
     @Autowired
     ProgramaAcademicoRepository repo;
 
@@ -83,6 +95,13 @@ public class ProgramaAcademicoServiceImpl implements ProgramaAcademicoService {
 
     }
 
+    /**
+     * Asignar director.
+     *
+     * @param id        the id
+     * @param docenteId the docente id
+     * @throws Exception the exception
+     */
     public void asignarDirector(UUID id, Integer docenteId) throws Exception {
         Optional<ProgramaAcademico> pa = repo.findById(id);
         Optional<Persona> per = personaRepository.findById(docenteId);

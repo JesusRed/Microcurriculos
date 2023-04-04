@@ -15,10 +15,19 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * The type Competencia service.
+ */
 @Service
 public class CompetenciaServiceImpl implements CompetenciaService {
+    /**
+     * The Repo.
+     */
     @Autowired
     CompetenciaRepository repo;
+    /**
+     * The Converter.
+     */
     @Autowired
     CompetenciaConverter converter;
 

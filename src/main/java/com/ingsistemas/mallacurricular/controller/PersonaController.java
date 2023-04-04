@@ -49,7 +49,7 @@ public class PersonaController implements ControllerGeneric<PersonaDto, Integer>
     @Override
     @Secured({"ROLE_ADMIN"})
     @PostMapping("/save")
-    public ResponseEntity<PersonaDto> crearOActualizar(PersonaDto dto) throws Exception {
+    public ResponseEntity<PersonaDto> crearOActualizar(@RequestBody PersonaDto dto) throws Exception {
         return new ResponseEntity<>(
                 service.crearOActualizar(dto),
                 HttpStatus.OK);

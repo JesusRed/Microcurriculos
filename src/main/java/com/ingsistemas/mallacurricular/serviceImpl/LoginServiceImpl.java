@@ -2,6 +2,9 @@ package com.ingsistemas.mallacurricular.serviceImpl;
 
 import com.ingsistemas.mallacurricular.service.LoginService;
 
+/**
+ * The type Login service.
+ */
 public class LoginServiceImpl implements LoginService {
 
     @Override

@@ -21,14 +21,29 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+/**
+ * The type Pensum service.
+ */
 @Service
 public class PensumServiceImpl implements PensumService {
+    /**
+     * The Repo.
+     */
     @Autowired
     PensumRepository repo;
+    /**
+     * The Converter.
+     */
     @Autowired
     PensumConverter converter;
+    /**
+     * The Asi repo.
+     */
     @Autowired
     AsignaturaRepository asiRepo;
+    /**
+     * The Programa repo.
+     */
     @Autowired
     ProgramaAcademicoRepository programaRepo;
 

@@ -29,7 +29,9 @@ public class Persona implements Serializable {
     }
 
 
+
     @Id
+    @Column(name="codigo")
     private Integer codigo;
 
 

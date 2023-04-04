@@ -13,4 +13,6 @@ import java.util.UUID;
 @Repository
 public interface ProgramaAcademicoRepository extends JpaRepository<ProgramaAcademico, UUID>, ProgramaAcademicoDao {
 
+    ProgramaAcademico findByNombre(String idPrograma);
+
 }
