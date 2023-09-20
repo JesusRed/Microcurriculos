@@ -72,8 +72,6 @@ public class PersonaController implements ControllerGeneric<PersonaDto, Integer>
     @PostMapping("/cambiarPermiso")
     public void cambiarPermiso(Integer idCodigo) {
         service.cambiarPermiso(idCodigo);
-
-
     }
 
 

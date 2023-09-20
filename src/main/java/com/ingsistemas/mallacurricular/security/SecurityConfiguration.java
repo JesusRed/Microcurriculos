@@ -30,8 +30,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         } else {
             http.cors().and().csrf().disable();
         }
-
-
     }
 
 

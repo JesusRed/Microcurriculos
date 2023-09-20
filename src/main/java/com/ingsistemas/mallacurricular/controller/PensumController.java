@@ -41,7 +41,7 @@ public class PensumController implements ControllerGeneric<PensumDto, Integer> {
 
     @Override
     @GetMapping("/getAll")
-    @Secured({"ROLE_DIRECTOR"})
+    //@Secured({"ROLE_DIRECTOR"})
     public ResponseEntity<List<PensumDto>> getAll() throws Exception {
         return new ResponseEntity<>(
                 service.getAll(),
